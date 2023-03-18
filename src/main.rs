@@ -1,5 +1,5 @@
 use algorithms_and_data_structures::algorithms::{
-    bubble_sort::bubble_sort, linear_search::linear_search,
+    binary_search::binary_search, bubble_sort::bubble_sort, linear_search::linear_search,
 };
 
 fn main() {
@@ -12,6 +12,7 @@ fn main() {
     bubble_sort(&mut vec);
     bubble_sort(&mut strs);
     dbg!(arr);
-    dbg!(vec);
     dbg!(strs);
+    dbg!(vec.clone());
+    dbg!(binary_search(&vec, 4));
 }
